@@ -36,7 +36,7 @@ onValue(gamesInDB, function(snapshot) {
 })
 
 function clearInputFieldEl() {
-    inputFieldEl = ""
+    inputFieldEl.value = ""
 }
 
 function clearGameListEl() {
