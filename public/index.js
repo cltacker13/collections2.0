@@ -6,7 +6,7 @@ import { getDatabase, ref, push, onValue } from "https://www.gstatic.com/firebas
 
 //app initialization and database set up
 const appSettings = {
-    databaseURL: "https://collections-d0f5c-default-rtbd.firebaseio.com" 
+    databaseURL: "https://collections-d0f5c-default-rtbd.firebaseio.com/" 
 }
 const app = initializeApp(appSettings)
 const database = getDatabase(app)
@@ -19,7 +19,6 @@ const gameListEl = document.getElementById("game-list")
 
 //add entry to database & clear input field
 addButtonEl.addEventListener("click", function() {
-   console.log("button clicked")
    let inputValue = inputFieldEl.value
    push(gamesInDB, inputValue)
    clearInputFieldEl()
