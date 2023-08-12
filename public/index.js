@@ -26,13 +26,14 @@ addButtonEl.addEventListener("click", function() {
 
 //call data  array to loop, clear list, & append new list to display
 onValue(gamesInDB, function(snapshot) {
-    let gamesArray = snapshot.val()
+    let gamesArray = Object.values(snapshot.val())
     console.log(gamesArray)
     let gameListArray = Object.values(snapshot.val())
     clearGameListEl()
     for (let i = 0; i < gameListArray.length; i++) {
+        let currentGameKey = i
         let currentGameName = gameListArray[i]
-        appendGameToGameListEl(currentGameName)
+        appendGameToGameListEl(currentGameKey,currentGameName)
     }
 })
 
@@ -44,6 +45,6 @@ function clearGameListEl() {
     gameListEl.innerHTML = ""
 }
 
-function appendGameToGameListEl(gameValue) {
-    gameListEl.innerHTML += '<li>'+gameValue+'</li>'
+function appendGameToGameListEl(gameKey,gameValue) {
+    gameListEl.innerHTML += '<li id="'+gameKey+'">'+gameValue+'</li>'
 }
