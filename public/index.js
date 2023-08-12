@@ -44,5 +44,5 @@ function clearGameListEl() {
 }
 
 function appendGameToGameListEl(gameValue) {
-    gameListEl.innerHTML += '<li>${gameValue}</li>'
+    gameListEl.innerHTML += '<li>'+gameValue+'</li>'
 }
