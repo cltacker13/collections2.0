@@ -28,10 +28,10 @@ addButtonEl.addEventListener("click", function() {
 onValue(gamesInDB, function(snapshot) {
     let gamesArray = Object.entries(snapshot.val())
     console.log(gamesArray)
-    let gameListArray = Object.values(snapshot.val())
+    //let gameListArray = Object.values(snapshot.val())
     clearGameListEl()
     for (let i = 0; i < gamesArray.length; i++) {
-        let currentGameKey = gamesArray[i]
+        let currentGameKey = gamesArray[i][0]
         let currentGameName = gamesArray[i][1]
         appendGameToGameListEl(currentGameKey,currentGameName)
     }
