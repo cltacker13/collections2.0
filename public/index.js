@@ -48,3 +48,8 @@ function clearGameListEl() {
 function appendGameToGameListEl(gameKey,gameValue) {
     gameListEl.innerHTML += '<li id="'+gameKey+'">'+gameValue+'</li>'
 }
+
+//pending build
+function deleteGameFromGameListEl(gameKey) {
+    console.log("pending build")
+}
