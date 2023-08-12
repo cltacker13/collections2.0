@@ -1,5 +1,5 @@
 //internal app functions - placeholder
-import { add } from "../functions.js"
+//import { add } from "../functions.js"
 //firebase app building functions
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
 import { getDatabase, ref, push, onValue } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
@@ -19,6 +19,7 @@ const gameListEl = document.getElementById("game-list")
 
 //add entry to database & clear input field
 addButtonEl.addEventListener("click", function() {
+   console.log("button clicked")
    let inputValue = inputFieldEl.value
    push(gamesInDB, inputValue)
    clearInputFieldEl()
