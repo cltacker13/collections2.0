@@ -29,7 +29,7 @@ input {
     font-family: Verdana, sans-serif;
 }
 
-add-button {
+#add-button {
     color: #FDFDFD;
     background-color: #AC485A;
     border: 0;
@@ -40,7 +40,7 @@ add-button {
     font-family: Verdana, sans-serif;
 }
 
-delete-button {
+#delete-button {
     color: #FDFDFD;
     background-color: #5e0f01;
     border: 0;
