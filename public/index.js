@@ -6,7 +6,7 @@ import { getDatabase, ref, push, onValue } from "https://www.gstatic.com/firebas
 
 //app initialization and database set up
 const appSettings = {
-    databaseURL: "https://collections-d0f5c-default-rtbd.firebaseio.com/" 
+    databaseURL: "https://collections-d0f5c-default-rtdb.firebaseio.com/" 
 }
 const app = initializeApp(appSettings)
 const database = getDatabase(app)
