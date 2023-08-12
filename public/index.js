@@ -30,9 +30,9 @@ onValue(gamesInDB, function(snapshot) {
     console.log(gamesArray)
     let gameListArray = Object.values(snapshot.val())
     clearGameListEl()
-    for (let i = 0; i < gameListArray.length; i++) {
-        let currentGameKey = i
-        let currentGameName = gameListArray[i]
+    for (let i = 0; i < gamesArray.length; i++) {
+        let currentGameKey = gamesArray[i]
+        let currentGameName = gamesArray[i][1]
         appendGameToGameListEl(currentGameKey,currentGameName)
     }
 })
