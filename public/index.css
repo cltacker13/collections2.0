@@ -7,11 +7,19 @@ html, body {
     height: 100%;
 }
 
-.container, .header {
+.container {
     display: flex;
     flex-direction: column;
     max-width: 90%; /**320px;**/
     margin: 30px auto;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%; /**320px;**/
+    margin: 5px auto;
     justify-content: center;
 }
 
