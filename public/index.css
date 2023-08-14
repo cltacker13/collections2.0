@@ -74,6 +74,19 @@ input {
     justify-content: center;
 }
 
+.game-list-entry {
+    color: black;
+    background-color: #DCE1EB;
+    border: 0;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 20px;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    justify-content: center;
+}
+
 #delete-button {
     color: #FDFDFD;
     background-color: #5e0f01;
