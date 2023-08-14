@@ -21,15 +21,16 @@ const gameListEl = document.getElementById("game-list")
 addButtonEl.addEventListener("click", function() {
     let inputValue = inputFieldEl.value
     if (inputValue) {
+        //TODO: later include check for duplicate entry
         push(gamesInDB, inputValue)
         clearInputFieldEl()
     } else {
         console.log("No value entered.")
-        alert("Please type an name.")
+        alert("Please type a name.")
     }
 })
 
-//call data  array to loop, clear list, & append new list to display
+//call data array to loop, clear list, & append live entry list to display
 onValue(gamesInDB, function(snapshot) {
     let gamesArray = Object.entries(snapshot.val())
     console.log(gamesArray)
