@@ -10,13 +10,22 @@ html, body {
 .container {
     display: flex;
     flex-direction: column;
-    max-width: 320px;
+    max-width: 90%; /**320px;**/
     margin: 30px auto;
+    justify-content: center;
 }
 
 img {
     width: 150px;
     margin: 0 auto;
+}
+
+#add-entry-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%; /**320px;**/
+    margin: 30px auto;
+    justify-content: center;
 }
 
 input {
