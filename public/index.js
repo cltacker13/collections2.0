@@ -46,7 +46,7 @@ function clearGameListEl() {
 }
 
 function appendGameToGameListEl(gameKey,gameValue) {
-    gameListEl.innerHTML += '<div id="'+gameKey+'">'+gameValue+'</div>'
+    gameListEl.innerHTML += '<div id="'+gameKey+'" class="game-list-entry">'+gameValue+'</div>'
 }
 
 //pending build
