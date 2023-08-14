@@ -19,9 +19,14 @@ const gameListEl = document.getElementById("game-list")
 
 //add entry to database & clear input field
 addButtonEl.addEventListener("click", function() {
-   let inputValue = inputFieldEl.value
-   push(gamesInDB, inputValue)
-   clearInputFieldEl()
+    let inputValue = inputFieldEl.value
+    if (inputValue) {
+        push(gamesInDB, inputValue)
+        clearInputFieldEl()
+    } else {
+        console.log("No value entered.")
+        alert("Please type an name.")
+    }
 })
 
 //call data  array to loop, clear list, & append new list to display
