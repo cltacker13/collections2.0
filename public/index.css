@@ -60,10 +60,14 @@ input {
 }
 
 #display-entry-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 30px auto;
     justify-content: center;
 }
 
-#game-list>li {
+#game-list {
     font-size: 20px;
     text-align: center;
     font-family: Verdana, sans-serif;
