@@ -8,12 +8,18 @@
     </head>
     <body>
         <div id="container" class="container">
-            <img src="assets/boardGames-tempLogo.png" alt="temp Board Game logo">
-            <input type="text" id="input-field" placeholder="New Game">
-            <button id="add-button">Add Game</button>
-            <ul id="game-list">
-                <li>Your Games <button id="delete-button">Delete Game</button></li>
-            </ul>
+            <div id="header" class="header">
+                <img id="logo" src="assets/boardGames-tempLogo.png" alt="temp Board Game logo">
+            </div>
+            <div id="add-entry-container">
+                <input type="text" id="input-field" placeholder="New Game">
+                <button id="add-button">Add Game</button>
+            </div>
+            <div id="display-entry-container">
+                <ul id="game-list">
+                    <li>Your Games <button id="delete-button">Delete Game</button></li>
+                </ul>
+            </div>    
         </div>
         <script src="index.js" type="module"></script>
         <!-- comment out until needed.
