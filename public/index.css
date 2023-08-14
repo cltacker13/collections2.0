@@ -63,7 +63,7 @@ input {
     justify-content: center;
 }
 
-#game-list {
+#game-list li {
     font-size: 20px;
     text-align: center;
     font-family: Verdana, sans-serif;
