@@ -7,7 +7,7 @@ html, body {
     height: 100%;
 }
 
-.container, header {
+.container, .header {
     display: flex;
     flex-direction: column;
     max-width: 90%; /**320px;**/
@@ -23,7 +23,7 @@ img {
 #add-entry-container {
     display: flex;
     flex-direction: column;
-    max-width: 90%; /**320px;**/
+    max-width: 320px;
     margin: 30px auto;
     justify-content: center;
 }
