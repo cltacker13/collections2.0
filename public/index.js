@@ -4,7 +4,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
 import { getDatabase, ref, push, onValue } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 import { render } from 'react-dom';
-import { createRoot, render } from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
 
 //app initialization and database set up
 const appSettings = {
