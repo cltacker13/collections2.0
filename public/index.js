@@ -15,7 +15,7 @@ const database = getDatabase(app)
 const gamesInDB = ref(database, "Games")
 
 const root = createRoot(document.getElementById('nav-header'));
-root.render(<h1>The Collections App</h1>);
+root.render('<h1>The Collections App</h1>');
 
 //input functionality
 const inputFieldEl = document.getElementById("input-field")
