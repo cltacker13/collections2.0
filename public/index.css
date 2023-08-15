@@ -24,16 +24,16 @@ html, body {
 }
 
 #nav-container {
-    display: block;
+    display: inline-block;
     max-width: 20%;
     justify-content: left;
     border-color: black;
 }
 
 #main-container {
-    display: block;
+    display: inline-block;
     max-width: 80%;
-    justify-content: right;
+    justify-content: center;
 }
 
 img {
