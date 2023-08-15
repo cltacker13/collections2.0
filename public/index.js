@@ -3,6 +3,8 @@
 //firebase app building functions
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
 import { getDatabase, ref, push, onValue } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
+import { render } from "react-dom";
+import { createRoot } from 'react-dom/client';
 
 //app initialization and database set up
 const appSettings = {
@@ -11,6 +13,9 @@ const appSettings = {
 const app = initializeApp(appSettings)
 const database = getDatabase(app)
 const gamesInDB = ref(database, "Games")
+
+const root = createRoot(document.getElementById('nav-header'));
+root.render(<h1>The Collections App</h1>);
 
 //input functionality
 const inputFieldEl = document.getElementById("input-field")
