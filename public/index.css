@@ -24,14 +24,14 @@ html, body {
 }
 
 #nav-container {
-    display: inline-block;
+    display: inline;
     max-width: 50%;
     justify-content: left;
     border-color: black;
 }
 
 #main-container {
-    display: inline-block;
+    display: inline;
     max-width: 80%;
     justify-content: center;
 }

@@ -14,8 +14,8 @@ const app = initializeApp(appSettings)
 const database = getDatabase(app)
 const gamesInDB = ref(database, "Games")
 
-const root = createRoot(document.getElementById('nav-header'));
-root.render(<h1>The Collections App</h1>);
+const root = createRoot(document.getElementById("nav-header"));
+root.render('<h1>The Collections App</h1>');
 
 //input functionality
 const inputFieldEl = document.getElementById("input-field")
@@ -61,6 +61,6 @@ function appendGameToGameListEl(gameKey,gameValue) {
 }
 
 //pending build
-function viewGameFromGameListEl(gameKey) {
+function showGameFromGameListEl(gameKey) {
     console.log("pending build")
 }
