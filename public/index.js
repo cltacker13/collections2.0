@@ -15,7 +15,7 @@ const database = getDatabase(app)
 const gamesInDB = ref(database, "Games")
 
 function NavigationMenu() {
-    return <h1>The Collections App</h1>
+    return '<h1>The Collections App</h1>'
 }
 
 const root = createRoot(document.getElementById("nav-header"));
