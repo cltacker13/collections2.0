@@ -19,7 +19,7 @@ function NavigationMenu() {
 }
 
 const root = createRoot(document.getElementById("nav-header"));
-root.render(<NavigationMenu />);
+root.render('<NavigationMenu />');
 
 //input functionality
 const inputFieldEl = document.getElementById("input-field")
