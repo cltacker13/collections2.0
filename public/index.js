@@ -56,6 +56,6 @@ function appendGameToGameListEl(gameKey,gameValue) {
 }
 
 //pending build
-function deleteGameFromGameListEl(gameKey) {
+function viewGameFromGameListEl(gameKey) {
     console.log("pending build")
 }
