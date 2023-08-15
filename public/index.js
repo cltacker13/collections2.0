@@ -5,7 +5,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebas
 import { getDatabase, ref, push, onValue } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 //import { useState } from 'react'
 //import { render } from 'react-dom'
-import { createRoot } from 'react-dom/client'
+import { createRoot } from 'react-dom/client' // can't find this (packages not included? - convert EXPO?)
 
 //app initialization and database set up
 const appSettings = {
@@ -15,10 +15,12 @@ const app = initializeApp(appSettings)
 const database = getDatabase(app)
 const gamesInDB = ref(database, "Games")
 
+//does not work yet
 function NavigationMenu() {
+    console.log("it works!")
     return '<h1>The Collections App</h1>'
 }
-
+//does not work yet
 const root = createRoot(document.getElementById("nav-header"));
 root.render('<NavigationMenu />');
 
