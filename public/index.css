@@ -23,6 +23,12 @@ html, body {
     justify-content: center;
 }
 
+#nav-container {
+    display:block;
+    max-width: 20%;
+    justify-content: left;
+}
+
 img {
     width: 150px;
     margin: 0 auto;
